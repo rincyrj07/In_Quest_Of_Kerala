@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(243, 219, 183);">
+    <div style="width: 300px; margin-left: auto; margin-right: auto;padding-top: 50px;padding-bottom: 50px;">
+    <h2>Sign Up Form</h2>
+    <form action="success.html">
+    <p>
+        <label for="username">Username<br><input id="username" type="text" onkeyup="validateName()"></label>
+        <span id="username-error"></span>
+    </p>
+
+    <p>
+        <label for="email">Email<br><input id="email" type="text" onkeyup="validateEmail()"></label>
+         <span id="email-error"></span>
+    </p>
+
+    <p>
+        <label for="password">Password<br><input id="password" type="text" onkeyup="validatePassword()"></label>
+         <span id="password-error"></span>
+    </p>
+
+    <p>
+        <label for="repeat">Repeat password<br><input id="repeat" type="text" onkeyup="validateRepeat()"></label>
+         <span id="repeat-error"></span>
+    </p>
+        <button id="submit" type="submit" onclick="return validateForm()">Submit</button>
+        <span id='submit-error' > </span>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
